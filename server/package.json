@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for EducateETF",
+  "main": "server.mjs",
+  "scripts": {
+    "run": "node server.mjs",
+    "dev": "nodemon server.mjs",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Ethan Suleman",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.2",
+    "mongoose": "^6.6.4",
+    "mongodb": "^5.9.0",
+    "axios": "^1.6.0"
+  }
+}

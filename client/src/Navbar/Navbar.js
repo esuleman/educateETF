@@ -5,8 +5,6 @@ import CancelIcon from '@mui/icons-material/Cancel';
 
 import NavbarStyle from './NavbarStyle'
 
-import Educate from '../Educate/Educate'
-
 const Navbar = () => {
     const [isSearchOpen, setIsSearchOpen] = useState(false)
     const [searchTerm, setSearchTerm] = useState('')
@@ -29,7 +27,7 @@ const Navbar = () => {
     return (
         <container style={NavbarStyle.container}>
             <Link to="/" style={NavbarStyle.textTitle}>EducateETF</Link>
-            <Link to="Educate" style={NavbarStyle.textSubtitle}>Educate</Link>
+            <Link to="Explore" style={NavbarStyle.textSubtitle}>Explore</Link>
             <Link to="Invest" style={NavbarStyle.textSubtitle}>Invest</Link>
             <Link to="Dashboard" style={NavbarStyle.textSubtitle}>Dashboard</Link>
             {isSearchOpen ? (

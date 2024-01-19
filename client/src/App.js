@@ -5,7 +5,7 @@ import styles from "./styles";
 
 import Navbar from "./Navbar/Navbar";
 import Home from "./Home/Home";
-import Educate from "./Educate/Educate";
+import Explore from "./Explore/Explore";
 
 function App() {
     return (
@@ -14,7 +14,7 @@ function App() {
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/Educate" element={<Educate />} />
+                    <Route path="/Explore" element={<Explore />} />
                 </Routes>
             </div>
         </BrowserRouter>

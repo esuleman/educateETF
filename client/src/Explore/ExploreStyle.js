@@ -1,33 +1,48 @@
 const ExploreStyle = {
 	container: {
-		//transparent background with no border
 		backgroundColor: "transparent",
 		border: "none",
-		//positioned relative to the normal flow
 		position: "relative",
-		//pushed down by the height of the navbar
 		top: "10vh",
-		//full width
 		width: "100%",
-		//height of 90vh
 		height: "90vh",
-		//no padding, no margin
-		padding: "0",
+		padding: "1rem",
 		margin: "0",
-		//no shadow
 		boxShadow: "none",
-		//no z-index
 		zIndex: "0",
-		//row
+		overflow: "scroll",
+		overflowX: "hidden",
+		overflowY: "scroll",
+		scrollbarWidth: "thin",
+		scrollbarColor: "#8AC6FF #2A2E32",
+	},
+	infoCard: {
+		background: 'rgba(30, 33, 36, 0.25)',
+		borderRadius: "15px",
+		marginTop: "1vh",
+		marginBottom: "3.5vh",
+		padding: "2vh",
+		boxShadow: "0 2px 8px rgba(0, 0, 0, 0.3)",
+		width: "70%",
+		height: "81vh",
+		marginLeft: "auto",
+		marginRight: "auto",
 		display: "flex",
 		flexDirection: "row",
 	},
 	headerColumn: {
-		marginLeft: "17.5vw",
-		marginTop: "5vh",
+		marginLeft: "5vw",
+		marginTop: "10vh",
 		display: "flex",
 		flexDirection: "column",
-		width: "25vw",
+		maxWidth: "25vw",
+	},
+	articleColumn: {
+		marginTop: "10vh",
+		marginLeft: "15vw",
+		marginRight: "5vw",
+		display: "flex",
+		flexDirection: "column",
 	},
 	text: {
 		fontSize: "20px",
@@ -44,34 +59,28 @@ const ExploreStyle = {
 		textAlign: "left",
 		color: "#8AC6FF",
 	},
-	articleColumn: {
-		marginTop: "5vh",
-		marginLeft: "15vw",
-		display: "flex",
-		flexDirection: "column",
-	},
-	chipContainer: {
+	articleChipContainer: {
 		display: "flex",
 		flexDirection: "row",
 		flexWrap: "wrap",
 		width: "15vw",
 		marginLeft: "-.5vw",
 	},
-	chip: {
+	articleChip: {
 		margin: "0.5vw",
 		backgroundColor: "rgba(255, 255, 255, 0.2)",
 		color: "#ffffff",
 		fontSize: "18px",
 		fontFamily: "sans-serif",
 	},
-	modal: {
+	articleModal: {
 		position: 'absolute',
-		top: '27.5%',
+		top: '40%',
 		left: '50%',
 		transform: 'translate(-50%, -50%)',
 		width: 750,
-		height: 250,
-		background: 'linear-gradient(18deg, rgba(30, 33, 36, 1) 0%, rgba(30, 33, 36, 1) 60%, #007EF5 100%)',
+		height: 500,
+		background: 'linear-gradient(15deg, rgba(30, 33, 36, 1) 0%, rgba(30, 33, 36, 1) 70%, #014a8f 100%)',
 		border: '2px solid #8AC6FF',
 		borderRadius: '10px',
 		boxShadow: 24,
@@ -89,7 +98,16 @@ const ExploreStyle = {
 		fontSize: "20px",
 		color: "#fff",
 		lineHeight: "1.75",
-	}
+	},
+	downIcon: {
+		position: "absolute",
+		bottom: "10px",
+		left: "50%",
+		transform: "translateX(-50%)",
+		borderRadius: "50%",
+		color: "#fff",
+		backgroundColor: "#000",
+	},
 }
 
 export default ExploreStyle;

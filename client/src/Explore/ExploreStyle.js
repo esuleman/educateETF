@@ -80,11 +80,11 @@ const ExploreStyle = {
 		transform: 'translate(-50%, -50%)',
 		width: 750,
 		height: 500,
-		background: 'linear-gradient(15deg, rgba(30, 33, 36, 1) 0%, rgba(30, 33, 36, 1) 70%, #014a8f 100%)',
-		border: '2px solid #8AC6FF',
+		background: 'rgba(30, 33, 36, 0.7)',
 		borderRadius: '10px',
 		boxShadow: 24,
 		p: 4,
+		backdropFilter: 'blur(10px)'
 	},
 	typographyHeader: {
 		fontFamily: "sans-serif",
@@ -101,12 +101,14 @@ const ExploreStyle = {
 	},
 	downIcon: {
 		position: "absolute",
-		bottom: "10px",
+		bottom: "7.5vh",
 		left: "50%",
 		transform: "translateX(-50%)",
 		borderRadius: "50%",
 		color: "#fff",
-		backgroundColor: "#000",
+		width: "25px",
+		height: "25px",
+		backgroundColor: 'rgba(255, 255, 255, 0.1)',
 	},
 }
 

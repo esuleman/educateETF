@@ -79,6 +79,27 @@ class Explore extends React.Component {
 						</p>
 					</div>
 				</Card>
+				<Card style={ExploreStyle.infoCard}>
+					<div style={ExploreStyle.headerColumn}>
+						<h1 style={ExploreStyle.headerText}>ETFs vs. Mutual Funds</h1>
+						<p style={ExploreStyle.text}>ETFs and mutual funds are similar in that they are both pooled
+							investment securities, but there are some key differences between the two. One key difference
+							is that ETFs can be traded on the stock exchange, while mutual funds can only be bought and
+							sold at the end of the trading day. Another key difference is that ETFs are generally cheaper
+							than mutual funds and are more tax efficient. ETFs are also generally more liquid than mutual
+							funds.
+						</p>
+					</div>
+					<div style={ExploreStyle.articleColumn}>
+						<h1 style={ExploreStyle.headerText}>ETFs vs. Stocks</h1>
+						<p style={ExploreStyle.text}>ETFs and stocks are similar in that they are both traded on the
+							stock exchange, but there are some key differences between the two. One key difference is that
+							ETFs are a type of pooled investment security, while stocks are a type of individual
+							investment security. Another key difference is that ETFs are generally less risky than stocks
+							because they are diversified across many different companies and industries.
+						</p>
+					</div>
+				</Card>
 				<Modal
 					open={this.state.open}
 					onClose={this.handleClose}
